@@ -2,7 +2,9 @@
     margin:0;
     padding:0;
 }
-
+ul {
+    list-style-type: none;
+}
 .Container {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -20,24 +22,45 @@
     background-color: red;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr 3fr;
 }
+.ProjectsHeading {
+    background-color: turquoise;
+}
+.Projects {
+    grid-row: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.AnnouncementsHeading {
+    
+}
+.Announcements {
+    background-color: green;
+}
+.TrendingHeading {
+
+}
+.Trending {
+    background-color: darkblue;
+}
+
 
 .Logo {
     background-color: blueviolet;
+    padding-bottom: 30px;
 }
 .Sidebar {
     background-color: lightblue;
     grid-row: 1/-1;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap:40px;
+    padding-left: 20px;
 }
 
 .Nav ul {
     background-color: yellow;
     display: grid;
     grid-template-rows: repeat(6, 1fr);
+    padding-bottom: 30px;
 }
 .Settings ul {
     background-color: aquamarine;
