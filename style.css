@@ -1,180 +1,32 @@
 @font-face { font-family: Roboto; src: url('./Fonts/Roboto/Roboto-Regular.ttf'); }
-
 * {
     margin:0;
     padding:0;
     font-family: Roboto;
 }
-
-/* stone color */
-.stone-color {
-    /* not used */
-    background-color: #fafaf9;
-    /* cardbg */
-    background-color: #f5f5f4;
-    /* not used */
-    background-color: #e7e5e4;
-    /* not used */
-    background-color: #d6d3d1;
-    /* not used */
-    background-color: #a8a29e;
-    /* not used */
-    background-color: #78716c;
-    /* not used */
-    background-color: #57534e;
-    /* not used */
-    background-color: #44403c;
-    /* not used */
-    background-color: #292524;
-    /* not used */
-    background-color: #1c1917;
-}
-
 ul {
     list-style-type: none;
+}
+.Announcements {
+    margin-bottom:30px;
+}
+
+.Announcements div{
+    margin-bottom:10px;
+}
+.AnnouncementsHeading, .TrendingHeading  {
+    color: #292524;
 }
 .Container {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: min-content 4fr;
 }
-
-.Header {
-    background-color: #f5f5f4;
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: min-content auto;
-    padding:20px 50px;
-    gap:20px;
-    box-shadow: 0px 3px 3px #575c0d;
-    z-index: 1;
-}
-
 .Content {
     background-color: #d6d3d1;
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding: 30px 20px;
-}
-.ProjectsHeading {
-    color: #292524;
-}
-.Projects {
-    grid-row: 1/-1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding:15px 0;
-    gap:20px;
-}
-.ProjectContainer {
-    padding-right: 20px;
-}
-
-.ProjectCard, .Announcements, .Trending {
-    background-color: #f5f5f4;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 3px 3px 3px #575c0d;
-}
-
-.ProjectCard {
-    padding:30px 20px;
-}
-.ProjectLinks {
-
-    display: grid;
-    gap:10px;
-    justify-content: right;
-    grid-template-rows: 1fr;
-    grid-template-columns: 24px 24px 24px;
-    padding-top:30px;
-}
-.RightSide div{
-    padding-bottom:15px;
-}
-.Announcements {
-    margin-bottom:30px;
-}
-.Announcements div{
-    margin-bottom:10px;
-}
-
-.TrendingHeading, .AnnouncementsHeading {
-    color: #292524;
-}
-.Trending {
-}
-
-
-.Logo {
-    padding-top: 30px;
-    padding-bottom: 50px;
-    font-size: 28px;
-    font-weight: bold;
-}
-.Sidebar {
-    background-color: #575c0d;
-    grid-row: 1/-1;
-    padding-left: 20px;
-    color: #f5f5f4;
-    font-size: large;
-    font-weight: bold;
-    box-shadow: 3px 0px 2px #575c0d;
-    z-index: 2;
-}
-
-.Nav ul {
-    display: grid;
-    grid-template-rows: repeat(6, 1fr);
-    padding-bottom: 30px;
-    /* align-items: center; */
-}
-.Nav ul li {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    align-items: center;
-}
-.Settings ul {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-}
-.Settings ul li {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    align-items: center;
-}
-.Trend {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-}
-.TrendUser {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-.UserActions {
-    display: grid;
-    grid-template-columns: min-content min-content auto;
-    align-items: center;
-    justify-content: end;
-}
-.UserIcon {
-    padding: 0 20px;
-}
-.SearchBar {
-    display: grid;
-    grid-template-columns: min-content auto;
-    align-items: center;
-}
-.SearchInput {
-    border-radius: 10px;
-    min-height: 24px;
-    border: 2px solid #575c0d;
-    background-color:#d6d3d1;
-    padding:3px 5px;
-    width: 100%;
-}
-.SearchBar img {
-    padding-right: 20px;
 }
 .FileActions {
     display: grid;
@@ -190,6 +42,120 @@ ul {
     height: 50%;
 
 }
+.Header {
+    background-color: #f5f5f4;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: min-content auto;
+    padding:20px 50px;
+    gap:20px;
+    box-shadow: 0px 3px 3px #575c0d;
+    z-index: 1;
+}
+.Logo {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.Nav ul {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    padding-bottom: 30px;
+    /* align-items: center; */
+}
+.Nav ul li {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.Projects {
+    grid-row: 1/-1;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    padding:15px 0;
+    gap:20px;
+}
+.ProjectContainer {
+    padding-right: 20px;
+}
+.ProjectCard, .Announcements, .Trending {
+    background-color: #f5f5f4;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px #575c0d;
+}
+.ProjectCard {
+    padding:30px 20px;
+    border-left: inset 8px #afb91f;
+}
+.ProjectsHeading {
+    color: #292524;
+}
+.ProjectLinks {
+
+    display: grid;
+    gap:10px;
+    justify-content: right;
+    grid-template-rows: 1fr;
+    grid-template-columns: 24px 24px 24px;
+    padding-top:30px;
+}
+.RightSide div{
+    padding-bottom:15px;
+}
+.SearchBar {
+    display: grid;
+    grid-template-columns: min-content auto;
+    align-items: center;
+}
+.SearchBar img {
+    padding-right: 20px;
+}
+.SearchInput {
+    border-radius: 10px;
+    min-height: 24px;
+    border: 2px solid #575c0d;
+    background-color:#d6d3d1;
+    padding:3px 5px;
+    width: 100%;
+}
+.Settings ul {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+.Settings ul li {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+.Sidebar {
+    /* background-color: #575c0d; */
+    background-image: linear-gradient(to right, #575c0d, #909910);
+    grid-row: 1/-1;
+    padding-left: 20px;
+    color: #f5f5f4;
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 3px 0px 2px #575c0d;
+    z-index: 2;
+}
+.Trend {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.TrendUser {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.UserActions {
+    display: grid;
+    grid-template-columns: min-content min-content auto;
+    align-items: center;
+    justify-content: end;
+}
 .UserDisplay {
     display: grid;
     grid-template-columns: min-content auto;
@@ -199,6 +165,9 @@ ul {
 }
 .UserDisplay img {
     padding-right: 20px;
+}
+.UserIcon {
+    padding: 0 20px;
 }
 .UserWelcome {
     display: grid;
